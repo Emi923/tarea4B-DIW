@@ -2,7 +2,7 @@
   <footer id="pie">
     <div class="container-footer">
       <div class="col-flex contactar">
-        <h3>Contácta con nosotros</h3>
+        <h3>Contacta con nosotros</h3>
         <a href="mailto:comidadomicilio@gmail.com">comidadomicilio@gmail.com</a>
         <a href="tel:+34665441021">665 441 021</a>
         <a href="#"> Calle falsa 123</a>
