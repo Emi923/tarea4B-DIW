@@ -1,8 +1,8 @@
 <template>
   <section id="camino-migas">
       <a class="inicio" href="#"> Inicio </a> >
-      <a href="#">Ordenadores </a> > 
-      <a class="actual" href="#">Ordenador portátil</a> 
+      <a href="#">HAMBURGUESAS </a> > 
+      <a class="actual" href="#">Hamburguesa bacon</a> 
 
 
   </section>
@@ -27,13 +27,13 @@ section#camino-migas a:visited{
     font-size: 1.2rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    color: #1abc9c;
+    color: #F18F35;
 }
 section#camino-migas a.actual {
     font-weight: 700;
 }
 section#camino-migas {
     margin-left: 1rem;
-    color: #1abc9c;
+    color: #F18F35;
 }
 </style>

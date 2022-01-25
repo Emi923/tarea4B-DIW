@@ -1,7 +1,7 @@
 <template>
   <section id="barra-busqueda">
       <form @submit.prevent="handleEnviar">
-          <input type="text" placeholder="Buscar productos ...">
+          <input type="text" placeholder="Buscar tu comida preferida ...">
           <button class="boton">Buscar</button>
       </form>
   </section>
@@ -31,7 +31,7 @@ section#barra-busqueda input{
     margin: 1rem;
     padding: 0.7rem 1rem;
     border-style: solid;
-    border: 2px solid #1abc9c;
+    border: 2px solid #F18F35;
     color: #181818;
     outline: none;
     line-height: 1.4rem;

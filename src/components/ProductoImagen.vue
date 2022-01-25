@@ -1,13 +1,12 @@
 <template>
   <section id="producto-imagen">
       <div class="img-big"> 
-          <img v-bind:src="fotos[0]" alt="Portátil Huawei MateBoot X">
+          <img v-bind:src="fotos[0]" alt="Hamburguesa bacon">
       </div>
         <div class="img-mini">
-          <a @click="cambiarFoto(1)"><img  v-bind:src="fotos[1]" alt="Portátil Huawei MateBoot X"></a>
-          <a @click="cambiarFoto(2)"><img  v-bind:src="fotos[2]" alt="Portátil Huawei MateBoot X"></a>
-          <a @click="cambiarFoto(3)"><img  v-bind:src="fotos[3]" alt="Portátil Huawei MateBoot X"></a>
-          <a @click="cambiarFoto(4)"><img  v-bind:src="fotos[4]" alt="Portátil Huawei MateBoot X"></a>
+          <a @click="cambiarFoto(1)"><img  v-bind:src="fotos[1]" alt="Hamburguesa bacon"></a>
+          <a @click="cambiarFoto(2)"><img  v-bind:src="fotos[2]" alt="Hamburguesa bacon"></a>
+          <a @click="cambiarFoto(3)"><img  v-bind:src="fotos[3]" alt="Hamburguesa bacon"></a>
         </div>
       </section>    
 </template>
@@ -18,11 +17,10 @@ export default {
     data () {
         return {
             fotos: [
-                require ('../assets/e1.jpg'),
-                require ('../assets/e1.jpg'),
-                require ('../assets/e2.jpg'),
-                require ('../assets/e3.jpg'),
-                require ('../assets/e4.jpg')]
+                require ('../assets/hamburguesa1.jpg'),
+                require ('../assets/hamburguesa1.jpg'),
+                require ('../assets/hamburguesa2.jpg'),
+                require ('../assets/hamburguesa3.jpg')]
         }
     },
     methods: {
@@ -40,6 +38,7 @@ export default {
     padding: 1rem;
     margin: 1rem;
     flex: 0 1 50%;
+    width: 50%;
 }
 .img-mini {
     display: flex;
@@ -50,5 +49,8 @@ export default {
     width: 100px;
     border:2px solid #d8d8d8;
     
+}
+.img-big img{
+    width: 100%;
 }
 </style>

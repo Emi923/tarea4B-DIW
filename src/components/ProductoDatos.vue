@@ -1,7 +1,7 @@
 <template>
   <section id="producto-datos">
-      <h1>Portátil Huawei MateBoot X</h1>
-      <h2>750,69€ <span class="iva">sin IVA: 620,41€</span></h2>
+      <h1>Hamburguesa Bacon</h1>
+      <h2>9,50€</h2>
       <div class="wrapper">
           <button class="btn" @click="cambiarContador('-1')" type="button" name="button">-</button>
           <input class="cantidad" type="text" name="name" :value="contador">
@@ -9,6 +9,7 @@
       </div>
       <br>
       <button class="boton"><span class="material-icons">shopping_cart</span> AÑADIR CARRITO</button>
+      <div class="container-fav"><a id="favoritos" @click="addFav()">Añadir a favoritos</a></div>
   </section>
 </template>
 
@@ -26,6 +27,19 @@ export default {
             if (!isNaN(this.contador) && (this.contador < 0)) {
               this.contador = 0
             }
+        },
+        addFav(){
+          
+          let fav = document.getElementById('favoritos');
+          if(fav.classList.contains('faved')){
+            alert("Este producto ha sido eliminado de su lista de favoritos");
+            fav.innerHTML = "Añadir a favoritos";
+          }else{
+            fav.classList.add("faved");
+            alert("Este producto ha sido añadido a su lista de favoritos");
+            fav.innerHTML = "Añadido a favoritos";
+          }
+          
         }
     }
 
@@ -42,7 +56,8 @@ h1 {
 }
 h2 {
   font-size:1.7rem;
-  color: #1abc9c;
+  color: #F18F35;
+  text-align: left;
 }
 span.iva {
   font-size:1rem;
@@ -67,6 +82,12 @@ span.iva {
 }
 button:focus, input:focus {
   outline: 0;
+}
+.container-fav{
+  margin-top: 4%;
+  color: #F18F35;
+  cursor: pointer;
+  font-size: 1.3rem;
 }
 
 </style>

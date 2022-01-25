@@ -1,5 +1,4 @@
 <template>
-<Cabecera />
 <MenuPrincipal />
 <div class="container">
   <BarraBusqueda />
@@ -10,6 +9,7 @@
   </div>
   <div class="container">
     <ProductoDescripcion />
+    <ProductosRelacionados />
   </div>
 </div>
   <Pie />
@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import Cabecera from './components/Cabecera.vue'
 import MenuPrincipal from './components/MenuPrincipal.vue'
 import BarraBusqueda from './components/BarraBusqueda.vue'
 import CaminoMigas from './components/CaminoMigas.vue'
@@ -25,16 +24,18 @@ import ProductoImagen from './components/ProductoImagen.vue'
 import ProductoDatos  from './components/ProductoDatos.vue'
 import ProductoDescripcion from './components/ProductoDescripcion.vue'
 import Pie from './components/Pie.vue'
+import ProductosRelacionados from './components/ProductosRelacionados.vue'
 
 export default {
   name: 'App',
-  components: { Cabecera, 
+  components: { 
                 MenuPrincipal, 
                 BarraBusqueda, 
                 CaminoMigas, 
                 ProductoImagen, 
                 ProductoDatos,
-                ProductoDescripcion, Pie }
+                ProductoDescripcion, Pie,
+                ProductosRelacionados }
 }
 </script>
 
@@ -57,13 +58,17 @@ body{
 }
 
 .boton {
-  background-color: #1abc9c;
+  background-color: #F18F35;
   font-size: 1.2rem;
   font-weight: 700;
   color: white;
   padding: 0.7rem 1.2rem;
   cursor: pointer;
-  border: none;
+  border: 1px solid #F18F35;
+}
+.boton:hover{
+  background-color: white;
+  color: #F18F35;
 }
 .dos-columnas {
   display: flex;
